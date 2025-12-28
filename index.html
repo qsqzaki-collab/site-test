@@ -161,6 +161,36 @@ input:focus, select:focus{
   border-color:#f6e27a;
   box-shadow:0 0 0 3px rgba(246,226,122,0.35);
 }
+  /* FORCE STYLE BOX TITLES */
+.products .product h3{
+  font-family:"Playfair Display", serif;
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:#111 !important;
+  margin-top:14px;
+}
+
+/* FORCE PRICE STYLE */
+.products .product p{
+  font-size:20px;
+  font-weight:700;
+  color:#c9a93d !important;
+  margin-bottom:16px;
+}
+
+/* CARD EFFECT PRO */
+.products .product{
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  transition:.3s;
+}
+
+.products .product:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 45px rgba(0,0,0,0.25);
+}
+
 </style>
 </head>
 
@@ -295,6 +325,7 @@ ${document.getElementById("total").innerText}`;
 
 </body>
 </html>
+
 
 
 
