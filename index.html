@@ -333,7 +333,7 @@ wilayaSelect.addEventListener("change", () => {
   if (prix.bureau !== null) {
     options += `<option value="${prix.bureau}">Bureau (${prix.bureau} DA)</option>`;
   } else {
-    options += `<option disabled>Bureau (Non disponible)</option>`;
+    options += `<option disabled>Bureau (غير موجود)</option>`;
   }
 
   // Domicile
@@ -420,6 +420,7 @@ ${document.getElementById("total").innerText}`;
 
 </body>
 </html>
+
 
 
 
