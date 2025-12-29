@@ -351,14 +351,6 @@ wilayaSelect.addEventListener("change", () => {
   calc();
 });
 
-
-  const prix = livraisonMaystro[w];
-
-  deliverySelect.innerHTML = `
-    <option value="${prix.bureau}">Bureau (${prix.bureau} DA)</option>
-    <option value="${prix.domicile}">À domicile (${prix.domicile} DA)</option>
-  `;
-
   calc();
 });
 wilayas.forEach(w=>{
@@ -420,3 +412,4 @@ ${document.getElementById("total").innerText}`;
 
 </body>
 </html>
+
