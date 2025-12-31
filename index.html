@@ -76,14 +76,19 @@ body{
 
 h1{
   text-align: center;
-  /* TITRE BOX (Box Cadeau 1,2,3) */
-.product h3{
-  font-size:22px;
-  font-weight:700;
-  letter-spacing:1px;
-  margin:12px 0 6px;
-  color:#1c1c1c;
-  font-family:"Playfair Display", serif;
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  font-style: italic;
+
+  background: linear-gradient(90deg, #f8e7a1, #e6c76e, #f8e7a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0 3px 10px rgba(0,0,0,0.35);
+
+  animation: elegantReveal 2.2s ease-out forwards;
 }
 
 /* PRIX */
@@ -183,10 +188,19 @@ button:hover{
   border:2px solid #f6e27a;
 }
 
-@keyframes fadeUp{
-  from{opacity:0; transform:translateY(30px)}
-  to{opacity:1; transform:translateY(0)}
+@keyframes elegantReveal {
+  0% {
+    opacity: 0;
+    letter-spacing: 14px;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 6px;
+    transform: translateY(0);
+  }
 }
+
 
 
 input, select{
@@ -696,6 +710,7 @@ ${document.getElementById("total").innerText}`;
 
 </body>
 </html>
+
 
 
 
